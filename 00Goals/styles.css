@@ -15,6 +15,11 @@ body {
   max-width: 40rem;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  background-color: rgb(232, 255, 131);
+
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 label, input {
@@ -41,6 +46,7 @@ li {
   margin: 1rem 0;
   padding: 1rem;
   border: 1px solid #ccc;
+  border-radius: 20px;
 }
 
 .refresh {
@@ -49,4 +55,27 @@ li {
   font-size: 20px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+
+    background-color: red;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 35%;
+    width: 150%;
+
+    background-color: purple;
+    color: white;
+  }
+
+  to {
+    width: 100%;
+    background-color: rgb(157, 255, 0);
+  }
 }
