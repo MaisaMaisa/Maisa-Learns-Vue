@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Goals Only</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <p>
+          hello.<br>
+          welcome to your Goals depository. <br>
+          once you've added your goals to the list, refresh the page!<br>
+          to refresh the page you can command + r<br>
+          or click on the <span class="refresh">↻</span> button of your favorite browser
+        </p>
+        <label for="goal">List big goals only below:</label>
+        <input type="text" id="goal" v-model="enteredValue"/>
+        <button v-on:click="addGoal">Add Goal to my list of big goals only</button>
+      </div>
+      <ul>
+        <li v-for="goal in goals">{{ goal }}</li>
+        <p><i>(don't forget to refresh the page once you're done with your list)</i></p>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
