@@ -44,7 +44,7 @@ p {
 input {
   font: inherit;
   border: 1px solid #ccc;
-  width: 35%;
+  width: 45%;
   padding: 0 5px 0 5px;
   margin: 2%;
 }
@@ -59,9 +59,11 @@ img{
   border-radius: 50%;
   width: 100%;
   margin: 5% 0 10% 0;
+  font-size: 15px!important;
 
+  box-shadow: 0px 0px 25px 49px rgb(170 255 0 / 75%);
   -webkit-box-shadow: 0px 0px 25px 49px rgb(170 255 0 / 75%);
-
+  -moz-box-shadow: 0px 0px 25px 49px rgb(170 255 0 / 75%);
 }
 
 /* button {
