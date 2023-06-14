@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Goals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>( Small Goals Only )</h1>
+    </header>
+    <section id="user-goal">
+      <h2>I really want to:</h2>
+      <!-- <p v-html="outputGoal()">{{ outputGoal() }}</p> -->
+      <p>{{ outputSmallGoal() }}</p>
+      <p>with a song called: <a target="_blank" v-bind:href="vueLink"><i>My Energy</i></a> by..</p>
+    </section>
+  </body>
+</html>
