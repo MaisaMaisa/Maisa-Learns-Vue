@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: cursive;
+}
+
+body {
+  margin: 0;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hotel-neum.com%2Fgalerija%2Fplaza-6.jpg&f=1&nofb=1&ipt=909b69edaf36be32f09484f43b874fe9f0ce7c450830880e2ebd21f6e7bcd595&ipo=images');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hotel-neum.com%2Fgalerija%2Fplaza-6.jpg&f=1&nofb=1&ipt=909b69edaf36be32f09484f43b874fe9f0ce7c450830880e2ebd21f6e7bcd595&ipo=images');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  color: blue;
+  text-align: center;
+  z-index: 1;
+
+  box-shadow: 0px 33px 26px -15px rgba(0,12,255,0.77) inset;
+  -webkit-box-shadow: 0px 33px 26px -15px rgba(0,12,255,0.77) inset;
+  -moz-box-shadow: 0px 33px 26px -15px rgba(0,12,255,0.77) inset;
+}
+
+#styling {
+  position: absolute;
+  top: 10rem;
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.demo {
+  width: 400px;
+  height: 400px;
+  margin: 16px;
+  border: 2px dashed black;
+  float: left;
+}
+
+.active{
+  border: solid 0.5px;
+  border-color: black;
+  background-color: black;
+}
+
+.uniqueActive{
+  border: solid 0.5px;
+  border-color: black;
+  border-radius: 50%;
+  background-image: url('/05ToggleGem/Screenshot\ 2023-07-04\ at\ 10.02.25.png');
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
