@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make America Great Again</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section id="assignment">
+      <!-- 3) Add dynamic inline styling to the below paragraph and let the user enter a background-color -->
+      <div class="type-color" :style="{backgroundColor: inputBackgroundColor}">
+        <div class="background">
+          <span>type the preferred color of the background </span>
+          <input type="text" v-model="inputBackgroundColor"/>
+        </div>
+
+          <div class="rainbow-flag">
+            <!-- 1) Fetch the user input and use it as a CSS class -->
+            <!-- The entered class should be added to the below paragraph -->
+            <!-- (available classes: "user1", "user2") -->
+            <span>(Fill in the blank)<br><h1>Make America <input type="text" v-model="inputClass"/> again. </h1></span><br>
+            <div class="flag-flag">
+              <div :class="paraClasses">red</div>
+              <div :class="paraClasses">orange</div>
+              <div :class="paraClasses">yellow</div>
+              <div :class="paraClasses">green</div>
+              <div :class="paraClasses">blue</div>
+              <div :class="paraClasses">violet</div>
+            </div>
+          </div>
+          <button @click="toggleParagraphVisibility">+</button>
+          <!-- 2) Use the "visible" and "hidden" classes to show/ hide the above paragraph -->
+          <!-- Clicking the button should toggle between the two options -->
+        </div>
+    </section>
+  </body>
+</html>
