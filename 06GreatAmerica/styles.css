@@ -70,6 +70,7 @@ p {
 
 .rainbow-flag{
   margin: 5%;
+  margin-bottom: 3%;
 }
 
 .flag-flag{
@@ -88,7 +89,7 @@ p {
 
 .mood3 {
   background-color: yellow;
-  color: white;
+  color: black;
 }
 
 .mood4 {
