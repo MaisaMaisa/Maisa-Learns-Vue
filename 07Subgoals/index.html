@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Management of I</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- else has to come after IF; removes from HTML; adding and removing can cause performance; recommended method -->
+    <!-- show doesn't work with else; is standalone; shows + hides with CSS -->
+    <!-- use key whenever there is v-for -->
+    <section id="user-goals">
+      <marquee scrollamount="20" direction="left"><h2> (: It's important to have goals in life, but forget about reaching them without also having the subgoals :)</h2></marquee>
+      <div class="everything-below-marquee">
+        <input type="text" v-model="enteredGoalValue"/>
+        <button @click="addGoal">Add Goal</button>
+        <!-- THIS IS IF + ELSE -->
+        <p v-if="goals.length === 0">Get started by adding some goals.</p>
+        <ul v-else-if="goals.length > 0">
+          <li class="goal" v-for="(goal, index) in goals" :key="goal">
+            <button class="remove-btn" @click="removeGoal(index)">x Remove Goal x</button>
+            <p>{{ goal }}</p>
+            <p class="chastatement" v-if="subgoals.length === 0">(Then what?)</p>
+            <input type="text" v-model="enteredSubGoalValue">
+            <button @click="addSubGoal">Add Subgoal</button>
+            <ul class="subgoal-ul" v-else-if="subgoals.length > 0">
+              <li v-for="(subgoal, index) in subgoals" :key="subgoal">
+                <p>{{index}}. {{ subgoal }}</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- LOOPING THROUGH NUMBERS WITH v-FOR -->
+      <!-- <ul>
+        <li v-for="num in 10">{{ num }}</li>
+      </ul> -->
+      <!-- LOOPING THROUGH OBJECTS WITH v-FOR -->
+      <!-- <ul>
+        <li v-for="(value, key) in {name: 'Maisa', age:31}">{{key}}: {{ value }}</li>
+      </ul> -->
+      <!-- THIS IS ALTERNATIVE -->
+      <!-- <p v-show="goals.length === 0">No goals have been added yet - please start adding some!</p>
+      <ul v-show="goals.length > 0">
+        <li>Goal</li>
+      </ul> -->
+    </section>
+  </body>
+</html>

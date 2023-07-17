@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#user-goals {
+  width: 100%;
+  text-align: center;
+}
+
+marquee{
+  background-color: red;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.everything-below-marquee{
+  margin: 2%;
+}
+
+#user-goals h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+#user-goals ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#user-goals li{
+  width: 30%;
+  float: left;
+  margin: 1rem 0;
+  margin-right: 1%;
+  padding: 1%;
+  font-size: 1.25rem;
+  background-color: lightblue;
+  color: #1f1f1f;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+#user-goals li:not(.goal) {
+  font-weight: 100;
+}
+
+#user-goals input {
+  font: inherit;
+  border: 1px solid #ccc;
+  margin-right: 1%;
+}
+
+#user-goals input:focus {
+  outline: none;
+  border-color: #1b995e;
+  background-color: #d7fdeb;
+}
+
+#user-goals button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: black;
+  color: yellow;
+  padding: 0.05rem 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+#user-goals button:hover,
+#user-goals button:active {
+  /* background-color: #ec3169; */
+  border-color: yellow;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+.remove-btn{
+  background-color: blue!important;
+  color: yellow!important;
+  border-color: black!important;
+  border-radius: 20px;
+  font-weight: lighter!important;
+}
+
+.remove-btn:hover{
+  border-color: yellow!important;
+}
+
+.chastatement{
+  font-weight: lighter!important;
+  font-size: 15px;
+}
+
+.subgoal-ul {
+  display: grid!important;
+  text-align: left;
+  margin-left: 3%!important;
+}
+
+.subgoal-ul li{
+  margin:0!important;
+  padding:0!important;
+  font-size: 15px!important;
+}
